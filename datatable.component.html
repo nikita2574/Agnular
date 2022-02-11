@@ -1,0 +1,13 @@
+<table border="1">
+    <tr>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Age</td>
+    </tr>
+    <tr *ngFor="let d of data; index as i">
+        <td>{{ d.id }}</td>
+        <td>{{ d.name }}</td>
+        <td>{{ d.age }}</td>
+        <button (click)="clickDelete(d.id, i)">Delete</button>
+    </tr>
+</table> 
